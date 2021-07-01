@@ -1,9 +1,9 @@
 package com.zh.pattern.design.strctureMode.proxy;
 
 public class UserDaoProxy implements IUserDao {
-    private UserDao userDao;
+    private IUserDao userDao;
 
-    public UserDaoProxy(UserDao userDao) {
+    public UserDaoProxy(IUserDao userDao) {
         this.userDao = userDao;
     }
 

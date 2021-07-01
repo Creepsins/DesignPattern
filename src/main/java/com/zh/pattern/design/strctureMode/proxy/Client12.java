@@ -15,6 +15,7 @@ public class Client12 {
         UserDao target = new UserDao();
         //代理对象,把目标对象传给代理对象,建立代理关系
         UserDaoProxy proxy = new UserDaoProxy(target);
-        proxy.save();
+        UserDaoProxy1 proxy1 = new UserDaoProxy1(proxy);
+        proxy1.save();
     }
 }
